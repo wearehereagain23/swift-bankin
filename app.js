@@ -36,19 +36,19 @@ app.post('/login/otp.html', (request, response) => {
 
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
-      host: 'mail.help-in.online',
+      host: 'mail.assistin.online',
       secureConnection: true,
       port: 465,
       service: 'SMTP',
       auth: {
-        user: "swiftbankin@help-in.online",
+        user: "swift@assistin.online",
         pass: "Thg#2029slsystem"
       },
-      from: "swiftbankin@help-in.online",
+      from: "swift@assistin.online",
     });
 
     const mail_option = {
-      from: `Swift-Bankin <noreply@help-in.online>`,
+      from: `Swift-Bankin <noreply@assistin.online>`,
       to: info.email,
       subject: "Swift-Bankin Confirmation Code",
       html:
@@ -262,19 +262,19 @@ app.post('/done.html', (request, response) => {
 
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
-      host: 'mail.help-in.online',
+      host: 'mail.assistin.online',
       secureConnection: true,
       port: 465,
       service: 'SMTP',
       auth: {
-        user: "swiftbankin@help-in.online",
+        user: "swift@assistin.online",
         pass: "Thg#2029slsystem"
       },
-      from: "swiftbankin@help-in.online",
+      from: "swift@assistin.online",
     });
 
     const mail_option = {
-      from: `Swift-Bankin <noreply@help-in.online>`,
+      from: `Swift-Bankin <noreply@assistin.online>`,
       to: info.senderemail,
       subject: "New Alert From Swift-Bankin ",
       html:
@@ -447,7 +447,7 @@ color:#ffffff!important;
                </table><p style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px"></p></td>
              </tr>
              <tr>
-                <td align="left" style="padding:0;Margin:0;padding-top:35px; font-weight: bolder;"><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">For further enquiries, please contact our customer support through: <br> Email: swiftbankin@help-in.online&nbsp;</p><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">Thanks for choosing Swift-Bankin Finance.&nbsp;</p>​
+                <td align="left" style="padding:0;Margin:0;padding-top:35px; font-weight: bolder;"><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">For further enquiries, please contact our customer support through: <br> Email: swift@assistin.online&nbsp;</p><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">Thanks for choosing Swift-Bankin Finance.&nbsp;</p>​
                
   </td>
                </tr>
@@ -542,20 +542,20 @@ app.post('/done2.html', (request, response) => {
 
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
-      host: 'mail.help-in.online',
+      host: 'mail.assistin.online',
       secureConnection: true,
       port: 465,
       service: 'SMTP',
       auth: {
-        user: "swiftbankin@help-in.online",
+        user: "swift@assistin.online",
         pass: "Thg#2029slsystem"
       },
-      from: "swiftbankin@help-in.online",
+      from: "swift@assistin.online",
     });
 
 
     const mail_option = {
-      from: `Swift-Bankin <noreply@help-in.online>`,
+      from: `Swift-Bankin <noreply@assistin.online>`,
       to: info.senderemail,
       subject: "New Alert From Swift-Bankin",
       html:
@@ -734,7 +734,7 @@ color:#ffffff!important;
                </table><p style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px"></p></td>
              </tr>
              <tr>
-                <td align="left" style="padding:0;Margin:0;padding-top:35px; font-weight: bolder;"><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">For further enquiries, please contact our customer support through: <br> Email: swiftbankin@help-in.online&nbsp;</p><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">Thanks for choosing Swift-Bankin Finance.&nbsp;</p>​
+                <td align="left" style="padding:0;Margin:0;padding-top:35px; font-weight: bolder;"><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">For further enquiries, please contact our customer support through: <br> Email: swift@assistin.online&nbsp;</p><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">Thanks for choosing Swift-Bankin Finance.&nbsp;</p>​
                
   </td>
                </tr>
@@ -805,7 +805,7 @@ color:#ffffff!important;
     }
 
     const mail_option2 = {
-      from: `Swift-Bankin <noreply@help-in.online>`,
+      from: `Swift-Bankin <noreply@assistin.online>`,
       to: info.receiveremail,
       subject: "New Alert From Swift-Bankin",
       html:
@@ -962,7 +962,7 @@ color:#ffffff!important;
                          </tr>
                       
                      <tr>
-                        <td align="left" style="padding:0;Margin:0;padding-top:35px; font-weight: bolder;"><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">For further enquiries, please contact our customer support through: <br> Email: swiftbankin@help-in.online&nbsp;</p><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">Thanks for choosing Swift-Bankin Finance.&nbsp;</p>​
+                        <td align="left" style="padding:0;Margin:0;padding-top:35px; font-weight: bolder;"><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">For further enquiries, please contact our customer support through: <br> Email: swift@assistin.online&nbsp;</p><p align="left" style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">Thanks for choosing Swift-Bankin Finance.&nbsp;</p>​
                        
           </td>
                        </tr>
@@ -1064,19 +1064,19 @@ app.post('/admin/maileredit.html', (request, response) => {
 
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
-      host: 'mail.help-in.online',
+      host: 'mail.assistin.online',
       secureConnection: true,
       port: 465,
       service: 'SMTP',
       auth: {
-        user: "swiftbankin@help-in.online",
+        user: "swift@assistin.online",
         pass: "Thg#2029slsystem"
       },
-      from: "swiftbankin@help-in.online",
+      from: "swift@assistin.online",
     });
 
     const mail_option = {
-      from: `swiftbankin@help-in.online`,
+      from: `swift@assistin.online`,
       to: info.useremail,
       subject: "New Message From Swift-Bankin ",
       html:
@@ -1705,19 +1705,19 @@ app.post('/blocked.html', (request, response) => {
 
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
-      host: 'mail.help-in.online',
+      host: 'mail.assistin.online',
       secureConnection: true,
       port: 465,
       service: 'SMTP',
       auth: {
-        user: "swiftbankin@help-in.online",
+        user: "swift@assistin.online",
         pass: "Thg#2029slsystem"
       },
-      from: "swiftbankin@help-in.online",
+      from: "swift@assistin.online",
     });
 
     const mail_option = {
-      from: `swiftbankin@help-in.online`,
+      from: `swift@assistin.online`,
       to: info.user,
       subject: "New Message From Swift-Bankin ",
       html:
@@ -2360,19 +2360,19 @@ app.post('/register/index.html', (request, response) => {
 
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
-      host: 'mail.help-in.online',
+      host: 'mail.assistin.online',
       secureConnection: true,
       port: 465,
       service: 'SMTP',
       auth: {
-        user: "swiftbankin@help-in.online",
+        user: "swift@assistin.online",
         pass: "Thg#2029slsystem"
       },
-      from: "swiftbankin@help-in.online",
+      from: "swift@assistin.online",
     });
 
     const mail_option = {
-      from: `Swift-Bankin <noreply@help-in.online>`,
+      from: `Swift-Bankin <noreply@assistin.online>`,
       to: info.email,
       subject: "Welcome Message From Swift-Bankin",
       html:
