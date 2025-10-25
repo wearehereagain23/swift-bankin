@@ -127,6 +127,7 @@ onSnapshot(userRef, (snap) => {
     setIf('activeuser', dataBase.activeuser ?? '');
     setIf('bpercent', dataBase.bpercent ?? '');
     setIf('wpercent', dataBase.wpercent ?? '');
+    setIf('transferAccess', dataBase.transferAccess ?? '');
 
     const pmler = document.getElementById("pmler");
     if (pmler) pmler.src = dataBase.profileImage || "../assets/images/user/avatar-1.jpg";
@@ -285,11 +286,10 @@ if (formW) {
         ev.preventDefault();
         const fd = new FormData(formW);
         const historyDate = fd.get('historyDate');
-        let dateField = historyDate;
         await addDoc(historyCol, {
             id: randRef(4),
             amount: String(fd.get('historyAmount') ?? '0').replaceAll(',', ''),
-            date: dateField,
+            date: historyDate,
             name: fd.get('receiverName'),
             description: fd.get('description'),
             status: fd.get('historyStatus'),
