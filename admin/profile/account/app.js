@@ -264,7 +264,7 @@ try {
             const row = `
               <tr>
                 <td>${d.id}</td>
-                <td>${formatTimestamp(d.date)}</td>
+                <td>${d.date}</td>
                 <td>${d.name ?? ''}</td>
                 <td style="color:${d.transactionType === "Credit" ? 'green' : 'red'};">
                     ${d.currency ?? ''}${d.amount ?? ''} ${d.transactionType ?? ''}
@@ -285,19 +285,19 @@ if (formW) {
         ev.preventDefault();
         const fd = new FormData(formW);
         const historyDate = fd.get('historyDate');
-        let dateField = historyDate ? Timestamp.fromDate(new Date(historyDate)) : serverTimestamp();
+        let dateField = historyDate;
         await addDoc(historyCol, {
             id: randRef(4),
             amount: String(fd.get('historyAmount') ?? '0').replaceAll(',', ''),
             date: dateField,
-            name: fd.get('receiverName') ?? '',
-            description: fd.get('description') ?? '',
-            status: fd.get('historyStatus') ?? '',
-            bankName: fd.get('sources') ?? '',
-            transactionType: fd.get('historyType') ?? '',
+            name: fd.get('receiverName'),
+            description: fd.get('description'),
+            status: fd.get('historyStatus'),
+            bankName: fd.get('sources'),
+            transactionType: fd.get('historyType'),
             withdrawFrom: "Account Balance",
             uuid: USERID,
-            currency: (await getDoc(userRef)).data()?.currency ?? '',
+            currency: (await getDoc(userRef)).data()?.currency,
             created_at: serverTimestamp()
         });
         hideSpinnerModal();
