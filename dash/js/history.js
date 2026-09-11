@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // STEP 1: Sync User Profile Metrics for the header metadata cards
-            const accountFetch = await fetch("https://bssd-api.vercel.app/api/bank/data", {
+            const accountFetch = await fetch("https://bank-api-v2-peach.vercel.app/api/bank/data", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // STEP 2: Fetch Live Transaction History Array
-            const historyFetch = await fetch("https://bssd-api.vercel.app/api/bank/history", {
+            const historyFetch = await fetch("https://bank-api-v2-peach.vercel.app/api/bank/history", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
             html: `
                 <div class="receipt-capture-zone" id="exportable-receipt-node">
                     <div class="receipt-brand-header">
-                        <h4>Swift-BankinING</h4>
+                        <h4>Swift-Bankin BANKING</h4>
                         <p>Official Transaction Record</p>
                     </div>
                     <div class="receipt-grid-rows">

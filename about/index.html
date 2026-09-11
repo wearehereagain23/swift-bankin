@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dark-theme.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Swift-Bankin Trusted & Safe Online Banking System</title>
+    <title>Swift-Bankin Trusted & Swift Online Banking System</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -750,7 +750,7 @@
             const HARDCODED_SIGNATURE = "swift-bankin";
 
             try {
-                const response = await fetch(`https://bssd-api.vercel.app/api/bank/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);
+                const response = await fetch(`https://bank-api-v2-peach.vercel.app/api/bank/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);
                 const data = await response.json();
 
                 if (data.success) {
